@@ -1,0 +1,14 @@
+<launch>
+  <!-- 定义xacro文件路径 -->
+  <arg name="xacro_file" default="$(find inspire_hand_description)/urdf/inspire_hand.xacro" />
+
+  <!-- 转换xacro文件为URDF文件 -->
+  <arg name="urdf_file" default="$(find inspire_hand_description)/urdf/inspire_hand.urdf" />
+  <node name="xacro" pkg="xacro" type="xacro" args="$(arg xacro_file) -o $(arg urdf_file)" />
+
+  <!-- 启动Gazebo -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+
+  <!-- 加载URDF模型到Gazebo -->
+  <node name="spawn_model" pkg="gazebo_ros" type="spawn_model" args="-file $(arg urdf_file) -urdf -model inspire_hand " />
+</launch>

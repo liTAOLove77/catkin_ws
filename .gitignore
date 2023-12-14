@@ -1,0 +1,9 @@
+#忽略生成的文件夹
+/build
+/devel
+/.vscode
+/src/rokae_with_ins_platform/platform_planning/data
+*.catkin_workspace
+*.catkin_workspace
+*.workspace
+*.user

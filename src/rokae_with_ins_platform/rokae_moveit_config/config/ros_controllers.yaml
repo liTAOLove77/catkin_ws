@@ -1,0 +1,116 @@
+rokae_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - joint1
+    - joint2
+    - joint3
+    - joint4
+    - joint5
+    - joint6
+  gains:
+    joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+inspire_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - Big_Thump_Joint1
+    - Big_Thump_Joint2
+    - Big_Thump_Joint3
+    - Big_Thump_Joint4
+    - Index_Finger_Joint1
+    - Index_Finger_Joint2
+    - Little_Thump_Joint1
+    - Little_Thump_Joint2
+    - Middle_Finger_joint1
+    - Middle_Finger_joint2
+    - Ring_Finger_Joint1
+    - Ring_Finger_Joint2
+  gains:
+    Big_Thump_Joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Big_Thump_Joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Big_Thump_Joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Big_Thump_Joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Index_Finger_Joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Index_Finger_Joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Little_Thump_Joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Little_Thump_Joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Middle_Finger_joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Middle_Finger_joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Ring_Finger_Joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Ring_Finger_Joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

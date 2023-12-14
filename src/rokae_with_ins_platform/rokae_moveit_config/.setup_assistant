@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: rokae_with_ins_description
+    relative_path: urdf/realsense_rokae_platform.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/realsense_rokae_platform.srdf
+  CONFIG:
+    author_name: litao
+    author_email: taoli4938@gmail.com
+    generated_timestamp: 1691580871

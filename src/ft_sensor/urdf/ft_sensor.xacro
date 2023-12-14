@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="ft_sensor">
+ 
+    <link name="ft_sensor">
+    <!-- <visual>
+        <geometry>
+            <mesh filename="package://ft_sensor/meshes/ft_sensor.STL"/>
+        </geometry>
+        <origin xyz="0.0 -0.0873 0.0" rpy="0.0 0.0 0.0"/>
+    </visual> -->
+    <visual>
+      <origin rpy="0 0 0" xyz="0 -0.0 0"/>
+      <geometry>
+        <mesh filename="package://ft_sensor/meshes/ft_sensor.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+        <geometry>
+        <mesh filename="package://ft_sensor/meshes/ft_sensor.STL" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+    <inertial>
+        <mass value="0.235"/>
+        <inertia ixx="7.1441E-05"
+                 ixy="1.6499E-08"
+                 ixz="-4.9269E-09"
+                 iyy="7.146E-05"
+                 iyz="-8.5336E-09"
+                 izz="0.00013366"/>
+    </inertial>
+</link>
+    
+</robot>

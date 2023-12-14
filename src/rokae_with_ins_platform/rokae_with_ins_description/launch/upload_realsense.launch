@@ -1,0 +1,5 @@
+<launch>
+  <param name="robot_description" 
+  command="$(find xacro)/xacro '$(find rokae_with_ins_description)/urdf/realsense_rokae_platform.urdf.xacro'"/>
+
+</launch>

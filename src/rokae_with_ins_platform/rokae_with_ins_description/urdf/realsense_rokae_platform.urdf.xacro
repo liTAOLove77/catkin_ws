@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<robot name="realsense_rokae_platform" xmlns:xacro="http://ros.org/wiki/xacro">
+  
+  <!-- import main macro -->
+  <xacro:include filename="$(find rokae_with_ins_description)/urdf/rokae_with_ins_description.urdf.xacro"/>
+  <xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro" />
+
+  <link name="world" />
+  <joint name="world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "xMateCR7_base" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+  <joint name="realsense_joint" type="fixed">
+    <parent link="world" />
+    <child link = "base_link" />
+    <origin xyz="0.75 0.0 1.2" rpy="0.0 1.57 0.0" />
+  </joint>
+
+  <link name="base_link" />
+  <xacro:sensor_d435 name="camera" topics_ns="camera" parent="base_link" publish_pointcloud="true">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:sensor_d435>
+
+</robot>
